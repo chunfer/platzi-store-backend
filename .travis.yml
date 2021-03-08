@@ -1,0 +1,32 @@
+language: node_js
+
+cache:
+  directories:
+    - node_modules
+    - ~/.npm
+
+node_js:
+  - '12'
+
+git:
+  depth: 3
+
+script:
+  - yarn test
+
+notifications:
+  email:
+    reciepients:
+      - juanfmontufarjuarez@gmail.com
+
+    on_success: always
+    on_failure: always
+
+deploy:
+  provide: heroku
+  skip_cleanup: true
+  keep_history: true
+  api_key: 30857828-667a-465f-ac27-e5a5cbcb1adf # desde heroku
+  app: chunfer-platzi-store-back
+  on:
+    repo:  chunfer/platzi-store-backend 
