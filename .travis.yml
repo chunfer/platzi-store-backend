@@ -29,4 +29,4 @@ deploy:
   api_key: 30857828-667a-465f-ac27-e5a5cbcb1adf # desde heroku
   app: chunfer-platzi-store-back
   on:
-    repo:  chunfer/platzi-store-backend 
+    repo: chunfer/platzi-store-backend 
